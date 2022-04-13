@@ -18,23 +18,23 @@
 <body>
     <!-- Шапка сайта  -->
     <header class="header">
-        <div class="container main-nav">
-            <a class="logo logo-header" href="./index.html">Web<span class="logo-item-header">Studio</span></a>
-            <nav class="nav-header">
-                <ul class="nav-list list">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Студия</a>
+        <div class="container header__container">
+            <a class="logo header__logo" href="./index.html">Web<span class="logo-label--header">Studio</span></a>
+            <nav class="nav">
+                <ul class="list nav__list">
+                    <li class="nav__item">
+                        <a class="current-link" href="./index.html">Студия</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="current-link" href="./portfolio.html">Портфолио</a>
+                    <li class="nav__item">
+                        <a class="nav__link" href="./portfolio.html">Портфолио</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacts">Контакты</a>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#contacts">Контакты</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="nav-list-contacts list">
-                <li class="nav-item-contacts">
+            <ul class="list nav-contacts-list">
+                <li class="nav-contacts-item">
                     <a class="nav-link-contacts" href="mailto:info@devstudio.com">
                         <svg class="nav-icon" width="16" height="12">
                             <use href="./images/icons.svg#envelope"></use>
@@ -42,7 +42,7 @@
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="nav-item-contacts">
+                <li class="nav-contacts-item">
                     <a class="nav-link-contacts" href="tel:+38096111111">
                         <svg class="nav-icon" width="10" height="16">
                             <use href="./images/icons.svg#smartphone"></use>
@@ -59,7 +59,7 @@
             <div class="container">
                 <h1 class="visually-hidden">Портфолио</h1>
                 <!-- Фильтр страницы -->
-                <ul class="filter-list list">
+                <ul class="list filter-list">
                     <li class="filter-item">
                         <button class="filter-btn" type="button">Все</button>
                     </li>
@@ -77,7 +77,7 @@
                     </li>
                 </ul>
                 <!-- Портфолио -->
-                <ul class="portfolio-list list">
+                <ul class="list portfolio-list">
                     <li class="portfolio-item">
                         <a class="portfolio-link" href="">
                             <div class="portfolio-thumb">
@@ -255,12 +255,12 @@
     </main>
     <!-- Подвал сайта (контакты) -->
     <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-address">
-                <a class="logo logo-footer" href="./index.html">Web<span class="logo-item-footer">Studio</span></a>
-                <address class="loc" id="contacts">
+        <div class="container footer__content">
+            <div class="footer__address">
+                <a class="logo footer__logo" href="./index.html">Web<span class="logo-label--footer">Studio</span></a>
+                <address class="location" id="contacts">
                     г. Киев, пр-т Леси Украинки, 26
-                    <ul class="contacts-list list">
+                    <ul class="list contacts-list">
                         <li class="contacts-item">
                             <a class="contacts-link" href="mailto:info@example.com">info@example.com</a>
                         </li>
@@ -270,9 +270,9 @@
                     </ul>
                 </address>
             </div>
-            <div class="join">
-                <h2 class="footer-title">присоединяйтесь</h2>
-                <ul class="footer-socials-list list">
+            <div class="footer__join">
+                <h2 class="footer__title">присоединяйтесь</h2>
+                <ul class="list footer-socials-list">
                     <li class="footer-socials-item">
                         <a class="footer-socials-link" href="" aria-label="Instagram">
                             <svg class="footer-socials-icons" width="20" height="20">
@@ -303,9 +303,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="subscribe">
+            <div class="footer__subscribe">
                 <form>
-                    <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+                    <h2 class="footer__title">Подпишитесь на рассылку</h2>
                     <input class="subscribe-input" type="email" name="email" placeholder="E-mail" autocomplete="off">
                     <button class="subscribe-btn" type="submit">Подписаться
                         <svg class="subscribe-icon" width="24" height="24">
