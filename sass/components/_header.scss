@@ -1,0 +1,126 @@
+.header {
+    border-bottom: 1px solid #ececec;
+    background-color: var(--primary-light-bg);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+
+    color: #2196f3;
+}
+
+.logo--header {
+    color: #000000;
+}
+
+.logo--footer {
+    color: var(--primary-text-darktheme);
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav {
+    margin-left: 93px;
+}
+
+.nav__list .nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: var(--primary-text-color);
+
+    transition: color var(--transition);
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    color: var(--accent-color);
+}
+
+.nav__link--current {
+    position: relative;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.nav__link--current::after {
+    position: absolute;
+    bottom: -1px;
+
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+}
+
+.contacts-header {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.contacts-header .contacts-header__item+.contacts-header__item {
+    margin-left: 30px;
+}
+
+.contacts-header__item {
+    display: flex;
+}
+
+.contacts-header__link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
+
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+
+    transition: color var(--transition);
+}
+
+.contacts-header__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.contacts-header__link:hover,
+.contacts-header__link:focus {
+    color: var(--accent-color);
+}
