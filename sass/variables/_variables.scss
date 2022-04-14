@@ -1,0 +1,18 @@
+:root {
+    /* Основные шрифты */
+    --main-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+    /* Светлая тема текста */
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196f3;
+    /* Темная тема текста */
+    --primary-text-darktheme: #fff;
+    /* Светлая тема фона */
+    --primary-light-bg: #fff;
+    --secondary-light-bg: #f5f4fa;
+    /* Темная тема фона */
+    --primary-dark-bg: #2f303a;
+    /* Переходы для анимации */
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
