@@ -1,0 +1,31 @@
+.occupation__list {
+    display: flex;
+}
+
+.occupation__list .occupation__item:not(:last-child) {
+    margin-right: 30px;
+}
+.occupation__item {
+    position: relative;
+}
+
+.occupation__overlay {
+    width: 370px;
+
+    position: absolute;
+    bottom: 0;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.occupation__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--primary-text-darktheme);
+}
