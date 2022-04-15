@@ -2,11 +2,12 @@
     display: flex;
 }
 
-.occupation__list .occupation__item:not(:last-child) {
-    margin-right: 30px;
-}
 .occupation__item {
     position: relative;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .occupation__overlay {
@@ -27,5 +28,5 @@
     text-align: center;
     text-transform: uppercase;
 
-    color: var(--primary-text-darktheme);
+    color: $mainLightBg;
 }
