@@ -18,7 +18,7 @@
     border: 1px solid #afb1b8;
     border-radius: 4px;
 
-    transition: border var(--transition);
+    transition: border $transition;
 
     &:hover,
     &:focus {
@@ -33,7 +33,7 @@
     height: 60px;
     fill: rgba(175, 177, 184, 1);
 
-    transition: fill var(--transition);
+    transition: fill $transition;
 
     .clients__link:hover &,
     .clients__link:focus & {
