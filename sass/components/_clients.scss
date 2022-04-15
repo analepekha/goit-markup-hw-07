@@ -19,6 +19,12 @@
     border-radius: 4px;
 
     transition: border var(--transition);
+
+    &:hover,
+    &:focus {
+        border: 1px solid $accentColor;
+        border-radius: 4px;
+    }
 }
 
 .clients__icons {
@@ -28,15 +34,9 @@
     fill: rgba(175, 177, 184, 1);
 
     transition: fill var(--transition);
-}
 
-.clients__link:hover .clients__icons,
-.clients__link:focus .clients__icons {
-    fill: var(--accent-color);
-}
-
-.clients__link:hover,
-.clients__link:focus {
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill: $accentColor;
+    }
 }
