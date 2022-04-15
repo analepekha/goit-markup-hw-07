@@ -13,14 +13,14 @@
     letter-spacing: 0.06em;
     cursor: pointer;
 
-    color: var(--primary-text-darktheme);
-    background-color: var(--accent-color);
+    color: $mainLightBg;
+    background-color: $accentColor;
 
     transition: background-color var(--transition);
-}
 
-.hero__btn:hover {
-    background-color: #188ce8;
+    &:hover {
+        background-color: #188ce8;
+    }
 }
 
 .filter-btn {
@@ -34,19 +34,19 @@
     text-align: center;
     cursor: pointer;
 
-    color: var(--primary-text-color);
-    background-color: var(--secondary-light-bg);
+    color: $mainTextColor;
+    background-color: $secondaryLightBg;
 
     transition: color var(--transition), background-color var(--transition),
         box-shadow var(--transition);
-}
 
-.filter-btn:hover,
-.filter-btn:focus {
-    color: var(--primary-text-darktheme);
-    background-color: var(--accent-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
+    &:hover,
+    &:focus {
+        color: $mainLightBg;
+        background-color: $accentColor;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 }
 
 .subscribe__btn {
@@ -65,19 +65,19 @@
     ;
     width: 200px;
 
-    background: var(--accent-color);
-    color: var(--primary-text-darktheme);
+    background: $accentColor;
+    color: $mainLightBg;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
     border-radius: 4px;
     cursor: pointer;
 
     transition: background-color var(--transition);
-}
 
-.subscribe__btn:hover,
-.subscribe__btn:focus {
-    background: #188ce8;
+    &:hover,
+    &:focus {
+        background: #188ce8;
+    }
 }
 
 .modal__btn {
@@ -94,10 +94,10 @@
     cursor: pointer;
 
     transition: fill var(--transition);
-}
 
-.modal__btn:hover {
-    fill: var(--accent-color);
+    &:hover {
+        fill: $accentColor;
+    }
 }
 
 .form-modal__btn {
@@ -112,7 +112,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    color: var(--primary-text-darktheme);
+    color: $mainLightBg;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -122,13 +122,15 @@
     cursor: pointer;
 
     transition: background var(--transition);
+
+    &:hover {
+        background: #188ce8;
+    }
+    &:focus {
+        background: #188ce8;
+        outline: transparent;
+    }
 }
 
-.form-modal__btn:hover {
-    background: #188ce8;
-}
 
-.form-modal__btn:focus {
-    background: #188ce8;
-    outline: transparent;
-}
+
