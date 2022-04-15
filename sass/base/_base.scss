@@ -1,12 +1,12 @@
 @import "./reset";
 
 body {
-    font-family: var(--main-font);
+    font-family: $mainFont;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
 
-    color: var(--primary-text-color);
+    color: $mainTextColor;
 }
 
 img {
