@@ -33,7 +33,7 @@
 
     transform: translateY(-50%);
     opacity: 1;
-    transition: opacity var(--transition);
+    transition: opacity $transition;
 
     .checkbox__input:checked + & {
         opacity: 0;
@@ -55,7 +55,7 @@
     border-radius: 2px;
 
     opacity: 0;
-    transition: opacity var(--transition);
+    transition: opacity $transition;
 
     .checkbox__input:checked ~ & {
         opacity: 1;
