@@ -8,6 +8,10 @@
 
 .benefits__item {
     max-width: 270px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .benefits__icons {
@@ -26,10 +30,6 @@
     display: block;
 }
 
-.benefits__item:not(:last-child) {
-    margin-right: 30px;
-}
-
 .benefits__subtitle {
     margin-bottom: 10px;
 
@@ -40,5 +40,5 @@
 
 .benefits__txt {
     line-height: 1.7;
-    color: var(--secondary-text-color);
+    color: $secondaryTextColor;
 }
