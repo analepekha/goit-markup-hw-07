@@ -7,7 +7,7 @@
 }
 
 .team__item {
-    background: var(--primary-light-bg);
+    background: $mainLightBg;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -57,10 +57,10 @@
     width: 44px;
     height: 44px;
 
-    background-color: var(--primary-light-bg);
+    background-color: $mainLightBg;
     border-radius: 50%;
 
-    transition: background-color var(--transition);
+    transition: background-color $transition;
 
     &:hover,
     &:focus {
@@ -74,7 +74,7 @@
     width: 20px;
     height: 20px;
 
-    transition: fill var(--transition);
+    transition: fill $transition;
 
     .socials__link:hover &,
     .socials__link:focus & {
