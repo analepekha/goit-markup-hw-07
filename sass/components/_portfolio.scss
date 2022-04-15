@@ -44,7 +44,7 @@
 
     color: $mainTextColor;
 
-    transition: box-shadow var(--transition);
+    transition: box-shadow $transition;
 
     &:hover,
     &:focus {
@@ -74,7 +74,7 @@
     background: rgba(33, 150, 243, 0.9);
 
     transform: translateY(100%);
-    transition: transform var(--transition), opacity var(--transition);
+    transition: transform $transition, opacity $transition;
 
     opacity: 0;
 
