@@ -1,34 +1,11 @@
 .header {
     border-bottom: 1px solid #ececec;
-    background-color: var(--primary-light-bg);
+    background-color: $mainLightBg;
 }
 
 .header__container {
     display: flex;
     align-items: center;
-}
-
-.header__logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
-}
-
-.logo {
-    font-family: $secondaryFont;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
-
-    color: $accentColor;
-}
-
-.logo--header {
-    color: #000000;
-}
-
-.logo--footer {
-    color: $mainLightBg;
 }
 
 .nav {
@@ -54,7 +31,7 @@
 
     color: $mainTextColor;
 
-    transition: color var(--transition);
+    transition: color $transition;
 
     &:hover,
     &:focus {
@@ -112,7 +89,7 @@
     letter-spacing: 0.02em;
     color: $secondaryTextColor;
 
-    transition: color var(--transition);
+    transition: color $transition;
 
     &:hover,
     &:focus {
