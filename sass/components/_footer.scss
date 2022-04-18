@@ -20,7 +20,7 @@
     line-height: 1.7;
     font-style: normal;
 
-    color: $mainLightBg;
+    color: $mainLightText;
 }
 
 .footer__contacts {
@@ -48,7 +48,7 @@
 
     margin-bottom: 20px;
 
-    color: $mainLightBg;
+    color: $mainLightText;
 }
 
 .footer__socials {
@@ -81,7 +81,7 @@
 
 .solials-footer__icons {
     display: inline-block;
-    fill: #fff;
+    fill: $mainLightBg;
     width: 20px;
     height: 20px;
 }
@@ -96,7 +96,7 @@
 
     margin-bottom: 20px;
 
-    color: $mainLightBg;
+    color: $mainLightText;
 }
 
 .subscribe__input {
